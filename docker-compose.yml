@@ -2,13 +2,13 @@ version: '3.9'
 
 services:
   backend:
-    container_name: django-app
+    image: firelace386/computex:backend
     build: ./Computex
     ports:
       - "8000:8000"
 
   frontend:
-    container_name: react-app
+    image: firelace386/computex:frontend
     build: ./ComputexFrontend
     ports:
       - "5173:5173"
